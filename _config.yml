@@ -1,2 +1,11 @@
 theme: jekyll-theme-cayman
-title: Jason's blog
+#title: Jason's blog
+title:        Beauty is life
+tagline:      Beauty
+baseurl:      ""
+locale:       "en"
+
+# About/contact
+author:
+  name:       Z Peng
+  url:        http://github.com/zhongpenggeo/ 
