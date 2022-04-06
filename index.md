@@ -5,9 +5,9 @@
 - Smithjc@qq.com 
 
 ### 个人信息
-  -姓名：沈吉才/性别：男/出生年月：1997.06
+  - 姓名：沈吉才/性别：男/出生年月：1997.06
   
-  -硕士/上海应用技术大学/资源与环境 2020~2023
+  - 硕士/上海应用技术大学/资源与环境 2020~2023
   
 You can use the [editor on GitHub](https://github.com/shenjicai/shenjicai.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
