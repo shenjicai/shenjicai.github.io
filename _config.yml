@@ -6,13 +6,14 @@ url                          : "" # the base hostname & protocol for your site
 
 blog:
   title                      : Jicai's blog
-  description                : This blog
+  description                : >
+                              This blog
                                
                                
 
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file
-  search_path                : "https://shenjicai.github.io/archive/"
+  search_path                : "shenjicai.github.io"
                                # needed for searchbox in archive page
   hero_layout                : true # turn on hero layout for blog and posts
   hero_placeholder           : "assets/img/generic_hero.jpg" # placeholder for hero image
@@ -34,7 +35,7 @@ author:
   github                    : shenjicai
   youtube                   : channel/UC8Sc3K7y9_-yndLG9HXRM2A
   stackoverflow             : users/16424024/jason
-  disqus                    : dactl # your disqus site name
+  disqus                    : Jaceeshen # your disqus site name
   google_analytics          : # 'UA-XXXXXXXX-X'
   photo                     : "uploads/me2.png"
   photo2x                   : "uploads/me.png"
