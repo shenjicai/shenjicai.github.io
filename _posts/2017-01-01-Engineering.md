@@ -2,7 +2,7 @@
 layout: post
 title:  "工科的正确打开方式"
 tags:
-  - 学习方式
+  - 想法
 hero: https://source.unsplash.com/collection/430471/
 overlay: red
 published: ture
