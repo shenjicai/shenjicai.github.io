@@ -4,7 +4,7 @@ title:  "工科的正确打开方式"
 tags:
   - 想法
 hero: https://source.unsplash.com/collection/430471/
-overlay: red
+overlay: purple
 published: ture
 
 ---
