@@ -2,8 +2,8 @@
 layout: post
 title:  "旋转编码器原理、选型及编码"
 tags:
-  - Hardward
-hero: https://source.unsplash.com/collection/430471/
+  - Hardware
+hero: https://source.unsplash.com/collection/345758/
 overlay: green
 published: ture
 
@@ -54,16 +54,16 @@ published: ture
 若旋转编码器只有单独一相的输出，仍然可以判断转轴的转速，只是不能判断旋转的方向。可以用在量测转速的场合，有时也会以此量测运动的距离。
 > 增量型编码器输出A相、B相和Z相分别代表的含义[4]：
 > 编码器轴每旋转一圈，A相和B相都发出相同的脉冲个数，但是A相和B相之间存在一个90°（电气角的一周期为360°）的电气角相位差，可以根据这个相位差来判断编码器旋转的方向是正转还是反转，正转时，A相超前B相90°先进行相位输出，反转时，B相超前A相90°先进行相位输出（如下图所示）。编码器每旋转一圈，Z相只在一个固定的位置发一个脉冲，所以可以作为复位相或零位相来使用。
-> ![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660450680244-64e73937-4335-4a62-a434-e1e53396e035.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=RoSSi&margin=%5Bobject%20Object%5D&name=image.png&originHeight=348&originWidth=404&originalType=url&ratio=1&rotation=0&showTitle=false&size=38075&status=done&style=none&taskId=u296421c2-cd54-4721-831c-603d365a0c0&title=)
+> ![img](https://picx.zhimg.com/80/v2-326b675909a1e780a195d95331c47147_1440w.png?source=d16d100b)
 
-##### 
+
 # 选型
 在选型或采购旋转编码器的时候，需要从多方面进行考虑，特别是在**技术参数**上需要进行一个技术参数上的参考：包括编码器的**尺寸**、**类型**、**分辨率**、**电气接口**等等，总的来说，第一步则是判断应用需要的是增量编码器、绝对编码器还是换向编码器。一经确定，就必须考虑分辨率、安装方式、电机轴尺寸等其他参数[5]。（对磁场环境有要求的务必不能选择磁电技术的编码器！！！）
 ## 外形尺寸
  除了编码器的定位止口，轴径，安装孔位；安装空间体积等常规参数，还需考虑比如：安装空间与选定轴的形态（中空轴、杆轴类）：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660454487644-9a325088-7df4-4162-8ac6-8eb3de646aa0.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u18ca703b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=370&originWidth=370&originalType=url&ratio=1&rotation=0&showTitle=true&size=98049&status=done&style=none&taskId=uf19b3ffa-9314-4223-be2b-4352207ba8d&title=%E6%9D%86%E8%BD%B4 "杆轴")![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660454496567-734e0f4d-d99c-497d-93ac-39fe463d4bb3.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=uaebd3652&margin=%5Bobject%20Object%5D&name=image.png&originHeight=370&originWidth=370&originalType=url&ratio=1&rotation=0&showTitle=true&size=66359&status=done&style=none&taskId=u72fc5417-46f5-4645-959a-1debd7390d2&title=%E4%B8%AD%E7%A9%BA%E8%BD%B4 "中空轴")
+![img](https://pic1.zhimg.com/80/v2-dcbba1101f2b770339ada00689cdff38_1440w.png?source=d16d100b "杆轴")![img](https://picx.zhimg.com/80/v2-183c06599955b3eb45c2ba8f1dcf10b0_1440w.png?source=d16d100b)
 以及连接线缆类型：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660454675175-f335dd9a-9f6f-4c0e-a35d-08984accb40c.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=324&id=u6638edd7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=520&originWidth=520&originalType=url&ratio=1&rotation=0&showTitle=true&size=187537&status=done&style=none&taskId=uf2d4d927-59db-4eee-b08a-0509b320079&title=%E8%BD%B4%E5%90%91%E9%85%8D%E7%BA%BF%E5%BC%95%E5%87%BA%E5%9E%8B&width=324 "轴向配线引出型")![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660454650748-1a0aeaab-f7b1-4f2a-a75b-64b50f2f5be3.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=324&id=ud0d87189&margin=%5Bobject%20Object%5D&name=image.png&originHeight=520&originWidth=520&originalType=url&ratio=1&rotation=0&showTitle=true&size=209719&status=done&style=none&taskId=ub6b238b8-2787-44a6-9c9c-7f9bda55657&title=%E5%BE%84%E5%90%91%E9%85%8D%E7%BA%BF%E5%BC%95%E5%87%BA%E5%9E%8B&width=324 "径向配线引出型")
+![img](https://picx.zhimg.com/80/v2-37ba6bf543793602f9d2768982f26aaf_1440w.png?source=d16d100b)![img](https://picx.zhimg.com/80/v2-140d383d67900e50375960f37a3ab54b_1440w.png?source=d16d100b)
 ## 分解率精度
 在考虑组装机械装置的要求精度和机械的成本的基础上，选择最适合的产品。一般选择机械综合精度的1/2～1/4精度的分辨率。
 ## 输出电路方式
@@ -73,64 +73,64 @@ published: ture
 最合适的输出信号类型并不总是那么明显，而且往往受到忽视。最常见的三种类型是**开集输出**（电压输出-E）、**推挽输出**（F型HTL格式）和**差分线路驱动器输出**。本文将分别介绍这三种输出类型，帮助大家根据具体应用需求选择合适的设备。
 ### 首要原则
 无论是增量编码器的正交输出，换向编码器的电机极输出，还是使用特定协议的串行输出，这些编码器输出都是数字信号。因此，5 V 编码器的信号会一直在近似 0 V 与 5 V 之间切换，这两个电压分别对应逻辑 0 和 1。增量编码器的输出是基本方波，如下图所示。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660455459741-c6f1f10b-3af2-48d5-98c0-2513250cd205.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=ub0a0e2a7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=164&originWidth=600&originalType=url&ratio=1&rotation=0&showTitle=true&size=66313&status=done&style=none&taskId=u184d8947-9e49-48dd-8762-43da1b137e4&title=%E6%95%B0%E5%AD%97%E7%BC%96%E7%A0%81%E5%99%A8%E7%9A%84%E9%80%9A%E7%94%A8%E6%96%B9%E6%B3%A2%E8%BE%93%E5%87%BA "数字编码器的通用方波输出")
+![img](https://pic3.zhimg.com/80/v2-516ee49652737dd9f42ac4eaea554c8c_1440w.png?source=d16d100b "数字编码器的通用方波输出")
 ### 开集输出（开路集电极输出）
 集电极输出电路是以三极管的发射极为公共端，信号从集电极输出的电路。由于三极管分为PNP和NPN两种，相应的，编码器的集电极输出电路也分为PNP和NPN两种。
 下面这张图是欧姆龙E6B2-CWZ5B编码器的集电极输出电路（PNP型），可以看到编码器的电源（+12V或+24V）通过一个3.3欧姆的电阻连接到三极管的发射极上，而脉冲信号（A/B/Z）则是从集电极进行输出：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660753378532-16042118-e0e1-4486-ab7d-a6fb5cb649a9.png#clientId=ufce91920-1ca4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=ud71138b3&margin=%5Bobject%20Object%5D&name=image.png&originHeight=341&originWidth=509&originalType=url&ratio=1&rotation=0&showTitle=true&size=48693&status=done&style=none&taskId=u57e77968-b1c9-4fc8-b703-41aaa32337b&title=PNP%E5%9E%8B%E9%9B%86%E7%94%B5%E6%9E%81%E8%BE%93%E5%87%BA%E7%94%B5%E8%B7%AF "PNP型集电极输出电路")
+![img](https://pic3.zhimg.com/80/v2-77cad9f3df6c03567bd8c66584920610_1440w.png?source=d16d100b "PNP型集电极输出电路")
 NPN型集电极输出电路与之类似，只不过发射极（公共端）连接的是0V，如下面的E6B2-CWZ6C输出电路：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660753418588-77ca4aa1-ca6b-44e9-8510-a68848195b8a.png#clientId=ufce91920-1ca4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=uce57187f&margin=%5Bobject%20Object%5D&name=image.png&originHeight=351&originWidth=503&originalType=url&ratio=1&rotation=0&showTitle=true&size=51015&status=done&style=none&taskId=uf938ec63-531a-4ce1-9e06-88fb4dabe32&title=NPN%E5%9E%8B%E9%9B%86%E7%94%B5%E6%9E%81%E8%BE%93%E5%87%BA%E7%94%B5%E8%B7%AF "NPN型集电极输出电路")
+![img](https://pic1.zhimg.com/80/v2-24fe4b7640012ce00bda17dae4a089b6_1440w.png?source=d16d100b "NPN型集电极输出电路")
 
 旋转编码器大多采用开集输出，即输入信号为高电平时，晶体管的集电极引脚保持开路或断开。当输出为低电平时，输出直接接地。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660455545053-4a9092ea-207b-41ba-b2b2-8cc1140f0ed9.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u35464a17&margin=%5Bobject%20Object%5D&name=image.png&originHeight=258&originWidth=600&originalType=url&ratio=1&rotation=0&showTitle=true&size=88989&status=done&style=none&taskId=ud3dc72e0-f295-40de-b0ed-61c3db95d0f&title=%E5%BC%80%E9%9B%86%E8%BE%93%E5%87%BA%E5%8E%9F%E7%90%86%E5%9B%BE "开集输出原理图")
+![img](https://pic3.zhimg.com/80/v2-f102ae3ab5616911af006dd7cf4328e4_1440w.png?source=d16d100b "开集输出原理图")
 NPN集电极开路输出：  输出电路采用NPN晶体管，发射极直接连接0V端，集电极作为输出端,输出端和+V端之间为开路(Open)状态，这种输出形态即为NPN集电极开路输出。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660456565506-e4e929a6-aa4b-494e-994d-3bc85244be2d.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u4be580d2&margin=%5Bobject%20Object%5D&name=image.png&originHeight=221&originWidth=508&originalType=url&ratio=1&rotation=0&showTitle=true&size=23453&status=done&style=none&taskId=u1b64ea92-7382-435a-87ed-3b0e51084f1&title=NPN%E9%9B%86%E7%94%B5%E6%9E%81%E5%BC%80%E8%B7%AF%E8%BE%93%E5%87%BA "NPN集电极开路输出")
+![img](https://pic1.zhimg.com/80/v2-7cc1a732fa5156f644f63f63a890f7a7_1440w.png?source=d16d100b "NPN集电极开路输出")
 集电极开路输出是以输出电路的晶体管发射极作为公共端，并且集电极悬空的输出电路。一般分为**NPN集电极开路输出**和**PNP集电极开路输出**。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660456660707-fb014ad1-a72e-4096-ae70-38774362fdd0.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=ub5467500&margin=%5Bobject%20Object%5D&name=image.png&originHeight=215&originWidth=507&originalType=url&ratio=1&rotation=0&showTitle=true&size=23040&status=done&style=none&taskId=uc9e62abe-bd04-41f4-9304-5d23c4bf32f&title=PNP%E9%9B%86%E7%94%B5%E6%9E%81%E5%BC%80%E8%B7%AF%E8%BE%93%E5%87%BA "PNP集电极开路输出")
+![img](https://pic2.zhimg.com/80/v2-474826b279b723db94bd3bc7002f1604_1440w.png?source=d16d100b "PNP集电极开路输出")
 由于输入信号为高电平时输出断开，需要使用外部“上拉”电阻，才能确保集电极电压达到所需的电平，即逻辑 1。因此，工程师在连接不同电压的系统时就更具灵活性：通过上拉电阻可将集电极电压上拉至不同电压，使之高于或低于编码器工作电压。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660455856121-000067ba-4ae3-4c26-851e-864e374711b9.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=udb634655&margin=%5Bobject%20Object%5D&name=image.png&originHeight=258&originWidth=600&originalType=url&ratio=1&rotation=0&showTitle=true&size=72014&status=done&style=none&taskId=ubabc6165-5136-4fe9-84d5-31bf95a4af9&title=%E9%9B%86%E7%94%B5%E6%9E%81%E8%BE%93%E5%87%BA%E5%8F%AF%E4%B8%8A%E6%8B%89%E8%87%B3%E9%80%82%E5%BD%93%E7%94%B5%E5%8E%8B%E4%BB%A5%E8%BF%9E%E6%8E%A5%E8%87%B3%E5%A4%96%E9%83%A8%E7%B3%BB%E7%BB%9F "集电极输出可上拉至适当电压以连接至外部系统")
+![img](https://pic1.zhimg.com/80/v2-d6295af6ac378d7132ce9743303aab23_1440w.png?source=d16d100b "集电极输出可上拉至适当电压以连接至外部系统")
 不过，这种接口也具有一些缺陷。许多现成的控制器都已内置了上拉电阻，而这些上拉电阻会消耗电流，即产生耗散功率。此外，当该电阻与寄生电容组成 RC 电路时，输出在高电压与低电压之间的转换速率将因此降低。转换斜率即转换速率。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660455972707-c093f1b2-3739-41ae-9647-cb31ea65234f.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=ua183f3a7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=164&originWidth=600&originalType=url&ratio=1&rotation=0&showTitle=true&size=54164&status=done&style=none&taskId=u57a5497b-ae5d-446a-98b7-3f53dfeafcf&title=%E5%BD%93%E8%BE%93%E5%87%BA%E5%9C%A8%E4%B8%A4%E7%A7%8D%E9%80%BB%E8%BE%91%E7%8A%B6%E6%80%81%E4%B9%8B%E9%97%B4%E8%BD%AC%E6%8D%A2%E6%97%B6%EF%BC%8C%E4%B8%8A%E6%8B%89%E7%94%B5%E9%98%BB%E4%BC%9A%E6%98%BE%E8%91%97%E9%99%8D%E4%BD%8E%E8%BE%93%E5%87%BA%E7%94%B5%E5%8E%8B%E8%BD%AC%E6%8D%A2%E9%80%9F%E7%8E%87 "当输出在两种逻辑状态之间转换时，上拉电阻会显著降低输出电压转换速率")
+![img](https://pic2.zhimg.com/80/v2-d4b0bebb162543509b7bbb2d4bde8bf3_1440w.png?source=d16d100b "当输出在两种逻辑状态之间转换时，上拉电阻会显著降低输出电压转换速率")
 通过降低转换速率，上拉电阻会显著降低编码器运行速度，从而降低增量编码器的分辨率。减小电阻值可以提高转换速率，但是当信号为低电平时，上拉电阻功耗的电流更大，耗散功率也更大。
 
 当旋转编码器的电源电压与控制部的电源电压不一致时，此种输出方式为最佳使用方案[6]。
 ### 电压输出
 电压输出型是在NPN型三极管的集电极与电源之间连接一个上拉电阻，这样集电极的输出电压会被钳制在一个稳定的范围。如下面这张图是欧姆龙E6B2-CWZ3E的电压输出电路：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660753495379-65d97331-ca05-49b7-85e0-5c878604e86d.png#clientId=ufce91920-1ca4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u27749bd3&margin=%5Bobject%20Object%5D&name=image.png&originHeight=345&originWidth=493&originalType=url&ratio=1&rotation=0&showTitle=true&size=47754&status=done&style=none&taskId=u30b7f97e-115e-426c-8763-cc8925e4267&title=%E7%94%B5%E5%8E%8B%E8%BE%93%E5%87%BA "电压输出")
+![img](https://pic1.zhimg.com/80/v2-7eb289eb3a70135fcfa23e50cf962554_1440w.png?source=d16d100b "电压输出")
 
 
 以输出电路的晶体管发射极为共通型，在集电极与电源间插入电阻，并输出因电压而变化的集电极的输出电路[7]。得集电极和电源之间能有一个稳定的电压状态。
 电压输出就是集电极开路输出的反相增加一个电阻，构成一个极性是PNP或NPN，而另一个极性是电压，实际上就是NPN+电压或PNP+电压，这是针对是PNP的或NPN的形式的接收设备的一种权宜，便于两者都可以连接，但现在这种电压接口往往已经做在了经济型PLC上了，如果是那样的PLC，还是应该直接选集电极开路输出的，或电压型的极性相当的编码器，因为如果选电压输出型的编码器PNP+电压的，而连接的PLC是NPN+电压的，就会有漏电流而产生错误[8]。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660456522335-ba2e8215-f26d-40e2-ab52-b425078148a6.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u59a4bf0c&margin=%5Bobject%20Object%5D&name=image.png&originHeight=216&originWidth=479&originalType=url&ratio=1&rotation=0&showTitle=true&size=23181&status=done&style=none&taskId=ud7a77a85-03f2-4ccd-bdcb-39cc7c5f0de&title=%E7%94%B5%E5%8E%8B%E8%BE%93%E5%87%BA "电压输出")
+![img](https://pic1.zhimg.com/80/v2-5b90efe118a21bc9767a4a5933dbe8b9_1440w.png?source=d16d100b "电压输出")
 ### 推挽输出
 推挽输出（Push-Pull Output）电路由两个三极管组成，比如下面这张图的T1和T2。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660753544292-2ccedd58-a4b1-49f8-bc2e-97e6c2702661.png#clientId=ufce91920-1ca4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u1c7f6c5b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=313&originWidth=421&originalType=url&ratio=1&rotation=0&showTitle=true&size=17929&status=done&style=none&taskId=u86b7d808-a7c7-429a-a6d7-fc4ff0a4617&title=%E6%8E%A8%E6%8C%BD%E8%BE%93%E5%87%BA%EF%BC%88Push-Pull%20Output%EF%BC%89%E7%94%B5%E8%B7%AF "推挽输出（Push-Pull Output）电路")
+![img](https://pica.zhimg.com/80/v2-6d166a736677c3697af2a0aacf380d3c_1440w.png?source=d16d100b "推挽输出（Push-Pull Output）电路")
 推挽输出的两个三极管分别接受输入信号和该信号的反相信号，当输入信号（Input Signal）为1时，T1导通，此时输入信号的反相为0，因此T2截止；同样的，当输入信号为0时，T1截止，此时输入信号的反相为1，因此T2导通；可见推挽式输出电路可以输出信号的正反两相（比如A和A补），其抗干扰能力比较强，适合较远距离的传输。
 
 推挽式放大输出，有的欧洲编码器用HTL表示，其相当于NPN+PNP的推挽放大，而且大部分有标准的集成放大电路，根据供电，输出10—30V，对于接收设备的兼容性强，信号强而稳定，若果再有与差分长线驱动一样有反相信号的话，因信号电压高，传递最远，差分传递及接受，抗干扰最好，工程项目或大型设备中，首选推挽式输出。
 推挽式含反相6通道输出，也就是HTL-6。重型机械设备常常有较远传递或大变频电机工况下，就需要选推挽式并且含具有反相输出的推挽式输出编码器（例如ABB变频控制器，就有这样的接口。
 
 推挽输出使用两个晶体管，而不是一个，因此可以弥补上述开集输出接口的缺陷。上部晶体管取代上拉电阻，导通时可将电压上拉至电源电压，由于电阻极小，因而转换速率较快。而输出信号为低电平时，晶体管关断，因此相较于开集电路，该有源上拉电路的耗散功率也相对较小，从而使电池供电设备的运行时间相对较长。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660456901811-5e3366ed-33e3-4150-90b5-c5480cd74cda.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u9534c557&margin=%5Bobject%20Object%5D&name=image.png&originHeight=293&originWidth=600&originalType=url&ratio=1&rotation=0&showTitle=true&size=100534&status=done&style=none&taskId=u87460744-0f3e-4575-8732-bc22ce41d14&title=%E6%8E%A8%E6%8C%BD%E8%BE%93%E5%87%BA "推挽输出")
+![img](https://pic4.zhimg.com/80/v2-23a64977fd11ebd5eff7cc14f64cd77f_1440w.png?source=d16d100b "推挽输出")
 在+V和0V之间由两个晶体管回路构成的输出方式即为推拉输出方式。当输出信号为H时,上面的晶体管为ON,下面的晶体管为OFF。当输出信号为L时,则上面的晶体管为OFF,下面的晶体管为ON。推拉输出方式由于输出电流为两个方向(流入，流出)控制,输出阻抗较低,波形不容易失真,也不易受到干扰的影响。
 当编码器的连接线较长时，可使用此输出方式。
 ### 差分线路驱动器输出（线路驱动器输出）
 线驱动输出（Line Driver Output）电路是使用专用输出芯片，输出符合RS422标准的差分信号，抗干扰能力更强，适合用于传输速度较高、距离较远的场合。下面这张图，是欧姆龙E6B2-CWZ1X的线驱动输出电路：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660753604996-ea35999d-1acf-419a-8aed-90d96809722d.png#clientId=ufce91920-1ca4-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=ub5c2ffd5&margin=%5Bobject%20Object%5D&name=image.png&originHeight=324&originWidth=510&originalType=url&ratio=1&rotation=0&showTitle=true&size=54210&status=done&style=none&taskId=u7ff996cb-449f-4de9-92f7-6aff11c5988&title=%E7%BA%BF%E9%A9%B1%E5%8A%A8%E8%BE%93%E5%87%BA%EF%BC%88Line%20Driver%20Output%EF%BC%89%E7%94%B5%E8%B7%AF "线驱动输出（Line Driver Output）电路")
+![img](https://pic4.zhimg.com/80/v2-ff4f8d5809d87ddaaa1c4edbc4e4bd5b_1440w.png?source=d16d100b "线驱动输出（Line Driver Output）电路")
 线性驱动输出是采用RS-422标准，用AM26LS31芯片应用于高速、长距离数据传输的输出模式。信号以差分形式输出，因此抗干扰能力更强。输出信号需专门能接收线性驱动输出的设备才能接收。输出电路见下图。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660741863258-069232c9-2d04-49a1-ab1d-5765e75c4003.png#clientId=ufc7f1c09-2da7-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=uda708b6e&margin=%5Bobject%20Object%5D&name=image.png&originHeight=291&originWidth=444&originalType=url&ratio=1&rotation=0&showTitle=true&size=32341&status=done&style=none&taskId=u37bbf9f8-b4c4-425d-9a6c-05d0f95c9e0&title=%E7%BA%BF%E6%80%A7%E9%A9%B1%E5%8A%A8%E8%BE%93%E5%87%BA "线性驱动输出")
+![img](https://pic1.zhimg.com/80/v2-0097393d85f865db9cac7b4cf55bf11c_1440w.png?source=d16d100b "线性驱动输出")
 虽然使用推挽输出的编码器弥补了开集输出的一些缺陷，但两者都是单端输出。在布线距离较长的应用或存在电噪声和干扰的环境中，使用单端输出具有一定局限性。
 布线距离较长时，信号幅度衰减，电容效应将减慢转换速率。由于单端信号的传输信号以地为参考，这类衰减就可能产生误差，从而导致系统性能下降。
 此外，在电噪声环境中，不同幅度的干扰电压都将耦合到电缆上，从而导致单端系统的接收器错误地解码信号电压。
 电缆长度超过一米时，建议使用差分信号。使用差分线路驱动器的编码器可产生两个输出信号：一个与原始信号相匹配，另一个与之完全相反，即互补信号。这两个信号之间的幅度差是原始单端信号的两倍，有助于克服电压降和电容引起的衰减问题。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660457031686-4033dd89-43ac-459d-ad93-9f8f3ee377bc.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u492b3041&margin=%5Bobject%20Object%5D&name=image.png&originHeight=176&originWidth=600&originalType=url&ratio=1&rotation=0&showTitle=true&size=98163&status=done&style=none&taskId=u32387608-9c52-4fca-9deb-802ab86916f&title=%E5%B7%AE%E5%88%86%E7%BA%BF%E8%B7%AF%E9%A9%B1%E5%8A%A8%E5%99%A8%E5%85%8B%E6%9C%8D%E4%BA%86%E4%BF%A1%E5%8F%B7%E8%A1%B0%E5%87%8F%E9%97%AE%E9%A2%98 "差分线路驱动器克服了信号衰减问题")
+![img](https://pic1.zhimg.com/80/v2-af244f8b62b0cc50825c308ff8059ccb_1440w.png?source=d16d100b "差分线路驱动器克服了信号衰减问题")
 此外，由于两个信号均存在共模噪声，可以相互抵消，因此接收系统可忽略其影响。由于噪声抑制能力相当出色，差分线路驱动器接口广泛用于工业和汽车应用。多种 CUI 编码器都提供差分线路驱动器输出选项，可用于要求严苛的应用。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660457080805-39f72eec-89e4-44df-a6ac-366385f8db08.png#clientId=u8d345932-9dc8-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u69f9cc53&margin=%5Bobject%20Object%5D&name=image.png&originHeight=129&originWidth=600&originalType=url&ratio=1&rotation=0&showTitle=true&size=68652&status=done&style=none&taskId=u4e615841-522e-4787-9a40-f45506a9b99&title=%E5%B7%AE%E5%88%86%E6%8E%A5%E6%94%B6%E5%99%A8%E5%8F%AF%E5%BF%BD%E7%95%A5%E4%B8%A4%E4%B8%AA%E4%BF%A1%E5%8F%B7%E4%B8%8A%E5%90%8C%E6%97%B6%E5%AD%98%E5%9C%A8%E7%9A%84%E5%99%AA%E5%A3%B0 "差分接收器可忽略两个信号上同时存在的噪声")
+![img](https://pic1.zhimg.com/80/v2-92c0b00526b8637acfb6c6281ab274f7_1440w.png?source=d16d100b "差分接收器可忽略两个信号上同时存在的噪声")
 本输出方式采用高速、长距离输送用的专用IC方式，该IC具有高速应答特性,适用于长距离传送，不易受干扰影响，是依据RS422-A规格的数据传送方式。信号以差动的2信号输出，因此抗干扰能力强。接受线路驱动器输出的信号时，可使用称为线路接
 该IC具有高速应答特性,适用于长距离传送,不易受干扰影响。
 ### 补码输出（互补输出）
 补码输出是输出上具备NPN和PNP 2种输出晶体管的输出电路。根据输出信号的「H」、「L」，2个输出晶体管交互进行「ON」、「OFF」动作。使用时，请在正极电源、OV上进行上拉、下降后再使用。补码输出，包括输出电流的流出、流入两个动作，其特征为信号的上、下降速度快，可延长代码的长距离。比集电极开路输出的电路传输距离能稍远，可与开路集电极输入机器（NPN、PNP）连接。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660739722768-446cd753-0b90-43d7-bdef-ec1e1f3d97a7.png#clientId=ufc7f1c09-2da7-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u756e604b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=210&originWidth=482&originalType=url&ratio=1&rotation=0&showTitle=true&size=22662&status=done&style=none&taskId=uc6791d1d-bdf1-4e1d-87eb-409065e2fd9&title=%E8%A1%A5%E7%A0%81%E8%BE%93%E5%87%BA "补码输出")
+![img](https://pic4.zhimg.com/80/v2-ba3a294dc7607f322ddfec59f610ebc4_1440w.png?source=d16d100b "补码输出")
 ## 厂商
 
 - [日本 NEMICON（内密控）](http://www.nemicon.org.cn/SeriesList.aspx?page=2&TypeId=20)
@@ -147,43 +147,44 @@ NPN集电极开路输出：  输出电路采用NPN晶体管，发射极直接连
 # 硬件电路及接线
 ## 电路
 注意上拉电阻及信号线的104电容滤波，可以使信号更稳定[10]。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660743928494-e7a89951-71fd-4498-8c8c-78b86820381f.png#clientId=ufc7f1c09-2da7-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=537&id=u743310eb&margin=%5Bobject%20Object%5D&name=image.png&originHeight=806&originWidth=525&originalType=binary&ratio=1&rotation=0&showTitle=false&size=9782&status=done&style=none&taskId=uc4910f39-ade7-42a9-a13f-55791e08034&title=&width=350)
+![img](https://pic1.zhimg.com/80/v2-122eae2cdb6f62cfe6c54da55fb083d8_1440w.png?source=d16d100b)
 ## 接线（PLC）
 增量编码器的连接，要清楚编码器的信号输出形式与接收设备的匹配问题，选编码器或选接收设备一定要两者信号形式的匹配。增量编码器的信号输出从波形上看，分**正余弦输出**（sin/cos）与**方波输出**两种。
 ①.  正余弦输出的信号是模拟量变化的信号周期，又分电压输出1Vpp和电流输出1uApp，这两种输出一般PLC都没有接口，大部分是连接专用的运动控制卡，其内部可做细分而获得更高的分辨率和动态特性，也有连接专用的细分盒再细分后输出方波的，选型时搞清楚是电压输出还是电流输出（现在大部分是电压输出了）。   
 ②. 方波输出的也有分集电极开路输出（NPN或PNP）、电压输出、差分长线驱动、推挽式输出等。
 
 
-1. 开路集电极输出[9]
+1、开路集电极输出[9]
 
 集电极开路输出就是类晶体管放大电路，三极管放大集电极开路输出，依据三极管的极性，分NPN与PNP，接收设备选型需要匹配不可选错，这种输出电路简单经济，但选型面窄，传输距离根据放大管有远有近，但总体传递距离不远，且保护不够，较易损坏，大部分用在单机设备上而不是工程项目中。这种输出的电压依据供电，有5-12V输出和12—24V输出，这也要搞清楚才能确保信号的连接。
 
    - NPN型集电极输出
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660742978559-ac097fe8-9d8e-4fce-b0ce-1f7e24265783.png#clientId=ufc7f1c09-2da7-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=259&id=u6caf1f0e&margin=%5Bobject%20Object%5D&name=image.png&originHeight=389&originWidth=739&originalType=binary&ratio=1&rotation=0&showTitle=false&size=147269&status=done&style=none&taskId=u1a49b740-3890-4921-89dc-3e7f44adcdd&title=&width=492.6666666666667)
+![img](https://pic1.zhimg.com/80/v2-86aa966c69563622c622bee26bd1e069_1440w.png?source=d16d100b)
 
    - PNP型集电极输出
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660742951259-4284109c-f0e2-4a88-9566-9ed2e831cb2b.png#clientId=ufc7f1c09-2da7-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=259&id=u33ad38fe&margin=%5Bobject%20Object%5D&name=image.png&originHeight=388&originWidth=742&originalType=binary&ratio=1&rotation=0&showTitle=false&size=131606&status=done&style=none&taskId=u32840dd0-cc0e-40fc-aebb-fefec115fb2&title=&width=494.6666666666667)
+![img](https://pic3.zhimg.com/80/v2-e9e4e0a877199e02cb6a5be600ea1621_1440w.png?source=d16d100b)
 
-2. 线性驱动输出（差分信号）
+2、 线性驱动输出（差分信号）
 
 差分长线驱动是一种差分放大的电路，大部分是5V，提供A+、B+、Z+及其180度反相的A—、B—、Z—，读取时，以A+与A-差分值读取，对于共摸干扰有抑制作用，传递距离较远，由于抗干扰能力较强，在运动控制(数控机床）中用得较多。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660743046574-612849f3-21b4-46dc-8e7a-e577e8bd656a.png#clientId=ufc7f1c09-2da7-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=252&id=u1e9be057&margin=%5Bobject%20Object%5D&name=image.png&originHeight=378&originWidth=722&originalType=binary&ratio=1&rotation=0&showTitle=false&size=146372&status=done&style=none&taskId=u453e11ea-bdb4-409d-9ea2-75b7806a216&title=&width=481.3333333333333)
+![img](https://pic4.zhimg.com/80/v2-959cd927679803380a1146f145290533_1440w.png?source=d16d100b)
 
-3. 电压输出型
+3、 电压输出型
 
 电压输出就是集电极开路输出的反相增加一个电阻，构成一个极性是PNP或NPN，而另一个极性是电压，实际上就是NPN+电压或PNP+电压，这是针对是PNP的或NPN的形式的接收设备的一种权宜，便于两者都可以连接，但现在这种电压接口往往已经做在了经济型PLC上了，如果是那样的PLC，还是应该直接选集电极开路输出的，或电压型的极性相当的编码器，因为如果选电压输出型的编码器PNP+电压的，而连接的PLC是NPN+电压的，就会有漏电流而产生错误。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660743079663-477851fe-4b57-45ff-b138-d5faf6f11640.png#clientId=ufc7f1c09-2da7-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=257&id=u8aaa5e10&margin=%5Bobject%20Object%5D&name=image.png&originHeight=385&originWidth=740&originalType=binary&ratio=1&rotation=0&showTitle=false&size=130680&status=done&style=none&taskId=ueb5f74b6-2210-4326-89ce-6db28aa542c&title=&width=493.3333333333333)
+![img](https://pica.zhimg.com/80/v2-ebcc38294b443611afff3553f6122470_1440w.png?source=d16d100b)
 
-4. 互补输出型
+4、 互补输出型
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/32469417/1660743128685-653ab245-5052-4536-ad69-bf68d83ed445.png#clientId=ufc7f1c09-2da7-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=259&id=u86d30997&margin=%5Bobject%20Object%5D&name=image.png&originHeight=389&originWidth=739&originalType=binary&ratio=1&rotation=0&showTitle=false&size=98891&status=done&style=none&taskId=uf46ceaa9-0125-47ce-aefd-cd3f9c05aa3&title=&width=492.6666666666667)
+![img](https://pic1.zhimg.com/80/v2-bd971e67774fb26f984ab2e5ca594018_1440w.png?source=d16d100b)
 
 # 编码
 ## Raspberry Pi Pico
 
 - C
+
 ```c
 #include <stdio.h>
 #include "pico/stdlib.h"
@@ -249,6 +250,7 @@ int main()
 ```
 
 - Python
+
 ```python
 from machine import Pin,ADC
 import utime
