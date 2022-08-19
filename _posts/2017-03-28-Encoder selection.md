@@ -303,7 +303,9 @@ while True :
         right_assist = 0
         right.irq(trigger=machine.Pin.IRQ_FALLING, handler=right_handler)
 ```
+
 ## STM32
+
 ```c
 /* USER CODE BEGIN Header */
 /**
@@ -545,7 +547,9 @@ void assert_failed(uint8_t *file, uint32_t line)
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
 ```
+
 ## Arduino
+
 ```c
 int cnt = 0;
 
@@ -577,6 +581,7 @@ void loop() {
   cnt++;   
 }
 ```
+
 # 参考
 
 1. [Omron：旋转式编码器](https://www.fa.omron.com.cn/guide/cgq/1718.html)
