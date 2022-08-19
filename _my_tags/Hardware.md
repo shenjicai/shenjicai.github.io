@@ -2,5 +2,5 @@
 slug: Hardware
 name: Hardware
 description: >
-  Some hardware design notes.
+            Some hardware design notes.
 ---
