@@ -1,5 +1,5 @@
 ---
-layout: compress
+# layout: compress
 ---
 
 <!DOCTYPE html>
@@ -18,6 +18,8 @@ layout: compress
         </div>
 
         {% include externals/scripting.html %}
-        {% include externals/google_analytics.html %}
+        {% if jekyll.environment == 'production' %}
+            {% include externals/google_analytics.html %}
+        {% endif %}
     </body>
 </html>
