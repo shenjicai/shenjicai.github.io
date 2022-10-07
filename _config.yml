@@ -114,7 +114,7 @@ sass:
 compress_html:
   clippings               : all
   endings                 : all
-  comments                : ["<!-- "," -->"]
+  #comments                : ["<!-- "," -->"]
   blanklines              : true
   profile                 : false
   ignore:
