@@ -3,7 +3,7 @@ layout: post
 title:  "旋转编码器原理、选型及编码"
 tags:
   - hardware
-hero: https://source.unsplash.com/collection/345758/
+hero: https://source.unsplash.com/random
 overlay: green
 published: ture
 

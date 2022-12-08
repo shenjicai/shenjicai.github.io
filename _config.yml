@@ -119,3 +119,12 @@ compress_html:
   profile                 : false
   ignore:
   envs                    : [local]
+
+
+## command
+#git pull  
+#bundle exec jekyll serve   
+
+#git add . 
+#git commit -m "modify the About" 
+#git push
